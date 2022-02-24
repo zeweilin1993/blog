@@ -1,37 +1,31 @@
 import { lazy, Suspense } from "react";
+import Home from "@/pages/home";
 
-export const routes = [
+const routes = [
   {
     path: "/",
-    element: import('@/pages/home')
+    element: <Home />,
   },
 ];
 
-function LazyElement(props: any) {
-  const { importFunc } = props
-  const LazyComponent = lazy(importFunc)
-  return (
-    <Suspense fallback={<div>路由懒加载...</div>}>
-      <LazyComponent />
-    </Suspense>
-  )
-}
-
 // 处理routes 如果element是懒加载，要包裹Suspense
-function dealRoutes(routesArr: any) {
-  if (routesArr && Array.isArray(routesArr) && routesArr.length > 0) {
-    routesArr.forEach((route) => {
-      if (route.element && typeof route.element == 'function') {
-        const importFunc = route.element
-        route.element = <LazyElement importFunc={importFunc} />
+function dealRoutes(routes: any) {
+  if (routes && Array.isArray(routes) && routes.length > 0) {
+    routes.forEach((route) => {
+      if (route.element && typeof route.element === "function") {
+        const LazyComponent = lazy(route.element);
+        route.element = (
+          <Suspense fallback={<div>路由懒加载...</div>}>
+            <LazyComponent />
+          </Suspense>
+        );
       }
       if (route.children) {
-        dealRoutes(route.children)
+        dealRoutes(route.children);
       }
-    })
+    });
   }
 }
-dealRoutes(routes)
+dealRoutes(routes);
 
-export default routes
-
+export default routes;
