@@ -1,17 +1,12 @@
-import { HashRouter, useRoutes } from "react-router-dom";
-import routes from "./router";
-
-function RouteElement() {
-  const element = useRoutes(routes);
-  return element;
-}
+import { BrowserRouter } from 'react-router-dom';
+import RouteElement from './router/element';
 
 function App() {
   return (
-    <div className="app">
-      <HashRouter>
+    <div className='app'>
+      <BrowserRouter>
         <RouteElement />
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }

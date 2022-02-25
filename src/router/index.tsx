@@ -1,31 +1,23 @@
-import { lazy, Suspense } from "react";
-import Home from "@/pages/home";
+import { RouteObject } from 'react-router';
+import { dealRoutes } from './router-helper';
 
-const routes = [
+const routes: RouteObject[] = [
   {
-    path: "/",
-    element: <Home />,
+    path: '/',
+    element: () => import('@/layout'),
+    children: [
+      {
+        path: '/home',
+        element: () => import('@/pages/home'),
+      },
+      {
+        path: '/about',
+        element: () => import('@/pages/about'),
+      },
+    ],
   },
 ];
 
-// 处理routes 如果element是懒加载，要包裹Suspense
-function dealRoutes(routes: any) {
-  if (routes && Array.isArray(routes) && routes.length > 0) {
-    routes.forEach((route) => {
-      if (route.element && typeof route.element === "function") {
-        const LazyComponent = lazy(route.element);
-        route.element = (
-          <Suspense fallback={<div>路由懒加载...</div>}>
-            <LazyComponent />
-          </Suspense>
-        );
-      }
-      if (route.children) {
-        dealRoutes(route.children);
-      }
-    });
-  }
-}
 dealRoutes(routes);
 
 export default routes;
