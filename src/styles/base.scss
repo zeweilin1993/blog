@@ -1,0 +1,29 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Trade Gothic W01','Hiragino Kaku Gothic ProN','ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3',Meiryo,ãƒ¡ã‚¤ãƒªã‚ª,sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #000000;
+}

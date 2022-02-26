@@ -1,4 +1,4 @@
-import { RouteObject } from 'react-router';
+import { Navigate, RouteObject } from 'react-router-dom';
 import { dealRoutes } from './router-helper';
 
 const routes: RouteObject[] = [
@@ -7,11 +7,23 @@ const routes: RouteObject[] = [
     element: () => import('@/layout'),
     children: [
       {
-        path: '/home',
+        index: true,
+        element: <Navigate to='/home' />
+      },
+      {
+        path: 'home',
         element: () => import('@/pages/home'),
       },
       {
-        path: '/about',
+        path: 'posts',
+        element: () => import('@/pages/posts'),
+      },
+      {
+        path: 'projects',
+        element: () => import('@/pages/projects'),
+      },
+      {
+        path: 'about',
         element: () => import('@/pages/about'),
       },
     ],

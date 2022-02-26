@@ -1,0 +1,35 @@
+.app-header {
+  .navigation {
+    li {
+      a {
+        display: block;
+        width: 100px;
+        text-align: center;
+        height: 100px;
+        line-height: 100px;
+        letter-spacing: 2px;
+        font-size: 11px;
+        color: #fff;
+        position: relative;
+
+        &::before {
+          content: '';
+          height: 4px;
+          width: 100%;
+          background: #fff;
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          opacity: 0;
+        }
+      }
+
+      &:hover {
+        a::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
