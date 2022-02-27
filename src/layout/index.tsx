@@ -1,13 +1,13 @@
 import { Outlet } from 'react-router-dom';
 import AppHeader from './AppHeader';
-import Toggle from './Toggle';
+import Social from './Social';
 
 function Layout() {
   return (
     <div className='layout'>
+      <Social />
       <AppHeader />
       <Outlet />
-      <Toggle />
     </div>
   );
 }

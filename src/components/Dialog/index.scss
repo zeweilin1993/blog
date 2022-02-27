@@ -16,4 +16,15 @@
       visibility 0.3s ease-in-out 0s;
     transition: opacity 0.3s ease-in-out 0s, visibility 0.3s ease-in-out 0s;
   }
+
+  &.is-visible {
+    .dialog-mask {
+      visibility: visible;
+      opacity: 0.85;
+
+      &:hover {
+        cursor: url('~@public/img/icon-close.png') 10 10, pointer;
+      }
+    }
+  }
 }

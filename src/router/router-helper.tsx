@@ -11,7 +11,7 @@ export const dealRoutes = (routes: RouteObject[]) => {
       if (route.element && typeof route.element === 'function') {
         const LazyComponent = lazy(route.element as any);
         route.element = (
-          <Suspense fallback={<div>路由懒加载...</div>}>
+          <Suspense fallback={<div>页面加载中，请稍候...</div>}>
             <LazyComponent />
           </Suspense>
         );
