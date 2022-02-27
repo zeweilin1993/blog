@@ -1,5 +1,5 @@
 import './styles/index.scss';
-import { itemsConfig } from './config';
+import { itemsConfig } from '@/common';
 
 function Items() {
   return (

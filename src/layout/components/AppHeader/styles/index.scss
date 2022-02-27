@@ -1,36 +1,38 @@
 .app-header {
-  .navigation {
-    display: flex;
-    justify-content: center;
+  .nav {
+    .navigation {
+      display: flex;
+      justify-content: center;
 
-    li {
-      a {
-        display: block;
-        width: 100px;
-        text-align: center;
-        height: 100px;
-        line-height: 100px;
-        letter-spacing: 2px;
-        font-size: 11px;
-        position: relative;
-        text-transform: uppercase;
-
-        &::before {
-          content: '';
-          height: 4px;
-          width: 100%;
-          background: #ffffff;
+      li {
+        a {
           display: block;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          opacity: 0;
-        }
-      }
+          width: 100px;
+          text-align: center;
+          height: 100px;
+          line-height: 100px;
+          letter-spacing: 2px;
+          font-size: 11px;
+          position: relative;
+          text-transform: uppercase;
 
-      &:hover {
-        a::before {
-          opacity: 1;
+          &::before {
+            content: '';
+            height: 4px;
+            width: 100%;
+            background: #ffffff;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+          }
+        }
+
+        &:hover {
+          a::before {
+            opacity: 1;
+          }
         }
       }
     }

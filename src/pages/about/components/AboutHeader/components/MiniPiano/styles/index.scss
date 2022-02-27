@@ -1,0 +1,25 @@
+.mini-piano {
+  width: 280px;
+  height: 60px;
+  border-top: 1px solid #ffffff;
+
+  .piano-keys-wrapper {
+    display: flex;
+    padding: 10px 11px;
+    padding-bottom: 0;
+
+    .piano-key {
+      height: 50px;
+      border-right: 1px solid #ffffff;
+      margin-right: 7px;
+
+      &:hover {
+        border-right: 1px solid transparent;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

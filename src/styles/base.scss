@@ -20,10 +20,19 @@ a {
   color: #ffffff;
 }
 
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  line-height: 2;
+  color: #afafaf;
+  letter-spacing: 1px;
+}
+
 body {
   width: 100vw;
   height: 100vh;
-  font-family: 'Trade Gothic W01','Hiragino Kaku Gothic ProN','ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3',Meiryo,ãƒ¡ã‚¤ãƒªã‚ª,sans-serif;
+  font-family: 'Trade Gothic W01', 'Hiragino Kaku Gothic ProN',
+    'ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3', Meiryo, ãƒ¡ã‚¤ãƒªã‚ª, sans-serif;
   font-size: 14px;
   color: #ffffff;
   background-color: #000000;

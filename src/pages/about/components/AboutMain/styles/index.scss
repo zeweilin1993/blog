@@ -1,0 +1,29 @@
+.about-main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 100px 0 100px 0;
+  overflow: hidden;
+
+  p {
+    margin-bottom: 1em;
+    text-align: justify;
+  }
+
+  .left {
+    width: 50%;
+    float: left;
+
+    .pd {
+      padding-right: 20px;
+    }
+  }
+
+  .right {
+    width: 50%;
+    float: right;
+
+    .pd {
+      padding-left: 20px;
+    }
+  }
+}
