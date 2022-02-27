@@ -1,6 +1,5 @@
+import { Social, AppHeader } from './components';
 import { Outlet } from 'react-router-dom';
-import AppHeader from './AppHeader';
-import Social from './Social';
 
 function Layout() {
   return (

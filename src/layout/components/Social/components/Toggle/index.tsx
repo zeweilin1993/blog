@@ -1,4 +1,4 @@
-import './index.scss';
+import './styles/index.scss';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectVisible, show, hide } from '@/store/socialSlice';
 

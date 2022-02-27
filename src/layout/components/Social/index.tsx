@@ -1,5 +1,4 @@
-import Toggle from './Toggle';
-import SocialItems from './Items';
+import { Toggle, SocialItems } from './components';
 
 function Social() {
   return (

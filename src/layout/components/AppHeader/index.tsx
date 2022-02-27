@@ -1,16 +1,15 @@
+import './styles/index.scss';
 import { Link } from 'react-router-dom';
-import { Navs } from './var';
-import './index.scss';
 
 function AppHeader() {
   return (
     <div className='app-header'>
       <nav className='nav'>
-        <ul className='navigation flex justify-center'>
-          {Navs.map((nav, index) => {
+        <ul className='navigation'>
+          {['home', 'posts', 'projects', 'about'].map((value, index) => {
             return (
               <li key={index}>
-                <Link to={nav.path}>{nav.label}</Link>
+                <Link to={`/${value}`}>{value}</Link>
               </li>
             );
           })}

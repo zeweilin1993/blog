@@ -1,5 +1,5 @@
-import './index.scss';
-import { IDialogProps } from './types';
+import './styles/index.scss';
+import { IDialogProps } from './@types';
 import { useState, useEffect } from 'react';
 
 function Dialog({ visible, DefaultElement, closeCallback }: IDialogProps) {
@@ -11,7 +11,9 @@ function Dialog({ visible, DefaultElement, closeCallback }: IDialogProps) {
 
   return (
     <div className={dialogVisible ? 'dialog is-visible' : 'dialog'}>
-      <div className='dialog-default'>{DefaultElement}</div>
+      <div className='dialog-default'>
+        <DefaultElement />
+      </div>
       <div
         className='dialog-mask'
         onClick={() => {

@@ -1,5 +1,8 @@
 .app-header {
   .navigation {
+    display: flex;
+    justify-content: center;
+
     li {
       a {
         display: block;
@@ -9,14 +12,14 @@
         line-height: 100px;
         letter-spacing: 2px;
         font-size: 11px;
-        color: #fff;
         position: relative;
+        text-transform: uppercase;
 
         &::before {
           content: '';
           height: 4px;
           width: 100%;
-          background: #fff;
+          background: #ffffff;
           display: block;
           position: absolute;
           bottom: 0;
