@@ -1,20 +1,4 @@
 .projects {
   .main {
-    p {
-      a {
-        display: inline-block;
-        margin: 0 10px;
-
-        &:hover {
-          color: var(--color-bg);
-        }
-      }
-
-      &.desc {
-        padding-left: 10px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-      }
-    }
   }
 }

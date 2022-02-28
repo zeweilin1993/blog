@@ -1,0 +1,42 @@
+.project {
+  display: flex;
+  margin-bottom: 50px;
+
+  .left {
+    width: 280px;
+    margin-right: 40px;
+
+    img {
+      width: 280px;
+    }
+  }
+
+  .right {
+    flex: 1;
+
+    span {
+      font-weight: bold;
+    }
+
+    p {
+      margin: 5px 0 10px;
+      overflow: hidden;
+    }
+
+    a {
+      float: left;
+
+      &:hover {
+        color: var(--color-bg);
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: block;
+
+    .left {
+      margin-bottom: 30px;
+    }
+  }
+}

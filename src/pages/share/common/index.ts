@@ -1,4 +1,4 @@
-import { IBook } from '../@types';
+import { IBook } from '../Book/@types';
 
 export const Books: IBook[] = [
   {
