@@ -42,7 +42,7 @@ function AboutMain() {
             <p>
               Hobby outdoor activities, cycling, hiking, swimming, etc., serious
               game enthusiasts, League of Legends master players are welcome to
-              fight, hee hee.
+              fight, hee.
             </p>
           </div>
         </div>

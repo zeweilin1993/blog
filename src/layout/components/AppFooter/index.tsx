@@ -9,7 +9,7 @@ function AppFooter() {
           <MiniSocial />
         </div>
         <p className='copyright'>
-          Copyright © LinZewei 2022 |{' '}
+          Copyright © Lin Zewei 2022 |{' '}
           <a href='https://beian.miit.gov.cn/' rel='noreferrer' target='_blank'>
             粤ICP备20003465号
           </a>
