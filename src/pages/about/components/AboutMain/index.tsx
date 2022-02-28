@@ -29,10 +29,7 @@ function AboutMain() {
               engineering construction. He led and developed the front-end
               engine Vital, a low-code platform of Drip Irrigation, which has
               been gradually put into use in the project with good
-              results.Before that, he has worked in finance, construction,
-              education and other industries, and has rich experience, leading
-              the team to develop up to ten feature requirements at the same
-              time.
+              results.
             </p>
             <p>
               In 2022, the goal is to master graphics, webAI, etc. The front-end
@@ -55,7 +52,7 @@ function AboutMain() {
             </p>
             <p>
               2021年加入滴灌通深圳开发中心负责前端基础架构研发、技术预研、前端工程化的建设等工作，主导并研发了滴灌通低代码平台前端引擎
-              Vital，已逐步在项目中投入使用，效果良好。在此之前，曾从事过金融、建筑、教育等行业，经验丰富，带领团队最高同时进行十条特性需求开发。
+              Vital，已逐步在项目中投入使用，效果良好。
             </p>
             <p>
               2022年目标掌握图形学、webAI等等，前端百花齐放，学如逆水行舟，不进则退，共勉。
