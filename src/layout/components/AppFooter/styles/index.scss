@@ -1,6 +1,6 @@
 .app-footer {
   .footer {
-    padding: 50px 0;
+    padding: 50px 0 20px;
     text-align: center;
 
     .social-wrapper {
@@ -11,11 +11,25 @@
     .copyright {
       margin-top: 20px;
 
+      span {
+        margin: 0 5px;
+      }
+
       a {
         display: inline-block;
 
         &:hover {
           color: var(--color-bg);
+        }
+      }
+
+      @media (max-width: 767px) {
+        span {
+          display: none;
+        }
+
+        a {
+          display: block;
         }
       }
     }

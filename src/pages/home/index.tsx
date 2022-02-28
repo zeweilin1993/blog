@@ -14,7 +14,7 @@ function Home() {
         <p>7.If the code and the comments disagree, then both are probably wrong. —— Norm Schryer</p>
         <p>8.If you have too many special cases, you are doing it wrong. —— Craig Zerouni</p>
         <p>9.Get your data structures correct first, and the rest of the program will write itself. —— David Jones</p>
-        <p className='self-create'>10.Changing the world starts with changing yourself, hee.—— Lin Zewei</p>
+        <p className='self-create'>10.Changing the world starts with changing yourself. —— Lin Zewei</p>
       </main>
     </div>
   );
