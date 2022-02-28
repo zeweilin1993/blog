@@ -1,0 +1,13 @@
+.home {
+  .main {
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+
+      &.self-create {
+        color: var(--color-bg);
+      }
+    }
+  }
+}

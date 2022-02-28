@@ -1,15 +1,10 @@
 .about-main {
-  padding: 40px 0;
-
   p {
     margin-bottom: 1em;
     text-align: justify;
   }
 
   .main {
-    max-width: 1080px;
-    padding: 0 40px;
-    margin: 0 auto;
     display: flex;
 
     .left {
@@ -30,7 +25,6 @@
 
     @media (max-width: 767px) {
       display: block;
-      padding: 0 20px;
 
       p {
         letter-spacing: 0.5px;

@@ -1,0 +1,18 @@
+.projects {
+  .main {
+    p {
+      a {
+        margin: 0 10px;
+
+        &:hover {
+          color: var(--color-bg);
+        }
+      }
+
+      &.desc {
+        padding-left: 10px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

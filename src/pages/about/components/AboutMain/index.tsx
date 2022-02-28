@@ -2,8 +2,8 @@ import './styles/index.scss';
 
 function AboutMain() {
   return (
-    <div className='about-main'>
-      <main className='main'>
+    <div className='about-main padding-content'>
+      <main className='main inner'>
         <div className='left'>
           <div className='pd'>
             <p>

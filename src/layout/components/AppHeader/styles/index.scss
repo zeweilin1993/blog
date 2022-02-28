@@ -1,5 +1,7 @@
 .app-header {
   .nav {
+    height: 100px;
+
     .navigation {
       display: flex;
       justify-content: center;
@@ -12,7 +14,7 @@
           height: 100px;
           line-height: 100px;
           letter-spacing: 2px;
-          font-size: 11px;
+          font-size: 12px;
           position: relative;
 
           &::before {
@@ -37,6 +39,8 @@
     }
 
     @media (max-width: 767px) {
+      height: 64px;
+
       .navigation {
         display: none;
       }

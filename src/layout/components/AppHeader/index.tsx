@@ -4,8 +4,8 @@ import { navsConfig } from '@/common';
 
 function AppHeader() {
   return (
-    <div className='app-header'>
-      <nav className='nav'>
+    <header className='app-header'>
+      <nav className='nav bd-before'>
         <ul className='navigation'>
           {navsConfig.map((nav, index) => {
             return (
@@ -16,7 +16,7 @@ function AppHeader() {
           })}
         </ul>
       </nav>
-    </div>
+    </header>
   );
 }
 

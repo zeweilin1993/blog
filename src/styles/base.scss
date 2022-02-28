@@ -16,12 +16,13 @@ li {
 }
 
 a {
+  display: block;
   text-decoration: none;
   color: var(--color-text);
 }
 
 p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 2;
   letter-spacing: 1px;
 }
@@ -32,7 +33,7 @@ body {
   --color-bg: #715699;
 
   height: 100vh;
-  font-family: Cutive Mono, Courier New, Consolas, monospace;
+  font-family: 'Open Sans',Arial,sans-serif;
   font-size: 14px;
   color: var(--color-text);
   background-color: #ffffff;

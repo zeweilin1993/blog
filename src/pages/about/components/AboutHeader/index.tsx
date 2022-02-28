@@ -3,7 +3,7 @@ import { MiniPiano } from './components';
 
 function AboutHeader() {
   return (
-    <div className='about-header'>
+    <div className='about-header bd-before'>
       <div className='header'>
         <MiniPiano />
       </div>
