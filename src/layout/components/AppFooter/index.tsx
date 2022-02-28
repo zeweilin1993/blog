@@ -1,5 +1,5 @@
 import './styles/index.scss';
-import MiniSocial from './MiniSocial';
+// import MiniSocial from './MiniSocial';
 
 function AppFooter() {
   return (

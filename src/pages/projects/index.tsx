@@ -1,5 +1,3 @@
-import './styles/index.scss';
-
 import { ProjectList } from './common';
 import Project from './Project';
 
