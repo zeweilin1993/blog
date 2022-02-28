@@ -1,13 +1,17 @@
 import './styles/index.scss';
-import { itemsConfig } from '@/common';
+import { navsConfig, itemsConfig } from '@/common';
 
 function Items() {
   return (
     <div className='items'>
-      {itemsConfig.map((item, index) => {
+      {[...navsConfig, ...itemsConfig].map((item, index) => {
         return (
-          <div className={`item item-${index + 1}`} key={index}>
-            <a href={item.href} rel='noreferrer' target='_blank'>
+          <div className='item' key={index}>
+            <a
+              href={item.path}
+              rel='noreferrer'
+              target={item.meta?.type === 'NAV' ? '_self' : '_blank'}
+            >
               <div className='front'>
                 <img src={item.icon} alt='' />
               </div>

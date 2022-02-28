@@ -1,4 +1,3 @@
-import './styles/index.scss';
 import { AboutHeader, AboutMain } from './components';
 
 function About() {

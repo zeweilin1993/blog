@@ -8,8 +8,8 @@ function MiniSocial() {
         {itemsConfig.map((item, index) => {
           return (
             <li key={index}>
-              <a href={item.href}>
-                <img src={item.icon} alt='' />
+              <a href={item.path} rel='noreferrer' target='_blank'>
+                <img src={item.iconBlack} alt='' />
               </a>
             </li>
           );

@@ -1,13 +1,11 @@
 .items {
-  width: 354px;
+  width: 510px;
   padding: 5px;
-  box-sizing: border-box;
   overflow: hidden;
 
   .item {
     width: 160px;
     height: 160px;
-    border: 1px solid rgba(220, 220, 220, 0.1);
     float: left;
     margin: 5px;
 
@@ -15,11 +13,11 @@
       display: block;
       width: 100%;
       height: 100%;
+      border: 1px solid rgba(220, 220, 220, 0.1);
       position: relative;
       overflow: hidden;
-      -webkit-transition: -webkit-transform 0.3s ease-in-out 0s,
-        background 0.3s ease-in-out 0s;
-      transition: transform 0.3s ease-in-out 0s, background 0.3s ease-in-out 0s;
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
 
       .front {
         width: 100%;
@@ -61,7 +59,7 @@
 
           h3 {
             margin-bottom: 14px;
-            color: #fff;
+            color: var(--color-theme);
             font-size: 16px;
             font-weight: normal;
             line-height: 16px;
@@ -74,8 +72,8 @@
             width: 80px;
             height: 25px;
             line-height: 25px;
-            color: #fff;
-            background: #715699;
+            color: var(--color-theme);
+            background-color: var(--color-bg);
             letter-spacing: 1px;
             text-transform: uppercase;
           }
@@ -96,6 +94,62 @@
           opacity: 1;
           -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    width: 318px;
+
+    .item {
+      width: 96px;
+      height: 96px;
+
+      a {
+        .front {
+          margin-top: -10%;
+
+          img {
+            width: 24px !important;
+            height: 24px !important;
+          }
+        }
+
+        .back {
+          margin-top: -65%;
+          opacity: 1;
+
+          .wrap {
+            width: 100%;
+            height: 40px;
+
+            h3 {
+              color: rgba(220, 220, 220, 0.5);
+              font-size: 11px;
+              line-height: 12px;
+              margin-bottom: 7px;
+              letter-spacing: 0.5px;
+            }
+
+            .panel-btn {
+              display: none;
+            }
+          }
+        }
+
+        &:hover {
+          .front {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+
+          .back {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+          }
         }
       }
     }

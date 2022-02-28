@@ -17,23 +17,23 @@ li {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-text);
 }
 
 p {
-  font-family: 'Lato', sans-serif;
   font-size: 12px;
   line-height: 2;
-  color: #afafaf;
   letter-spacing: 1px;
 }
 
 body {
-  width: 100vw;
+  --color-theme: #ffffff;
+  --color-text: #000000;
+  --color-bg: #715699;
+
   height: 100vh;
-  font-family: 'Trade Gothic W01', 'Hiragino Kaku Gothic ProN',
-    'ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3', Meiryo, ãƒ¡ã‚¤ãƒªã‚ª, sans-serif;
+  font-family: Cutive Mono, Courier New, Consolas, monospace;
   font-size: 14px;
-  color: #ffffff;
-  background-color: #000000;
+  color: var(--color-text);
+  background-color: #ffffff;
 }

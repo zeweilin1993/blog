@@ -1,9 +1,7 @@
 .toggle {
-  width: 100px;
-  height: 100px;
   position: fixed;
   z-index: 1003;
-  right: 0;
+  left: 0;
   top: 0;
   cursor: pointer;
   user-select: none;
@@ -17,10 +15,13 @@
     width: 24px;
     height: 24px;
     position: relative;
+    @media (max-width: 767px) {
+      margin: 20px;
+    }
     .bars {
       height: 4px;
       width: 4px;
-      background: #fff;
+      background: #000000;
       position: absolute;
       transition: all 0.3s;
     }

@@ -14,13 +14,12 @@
           letter-spacing: 2px;
           font-size: 11px;
           position: relative;
-          text-transform: uppercase;
 
           &::before {
             content: '';
             height: 4px;
             width: 100%;
-            background: #ffffff;
+            background: #000000;
             display: block;
             position: absolute;
             bottom: 0;
@@ -34,6 +33,12 @@
             opacity: 1;
           }
         }
+      }
+    }
+
+    @media (max-width: 767px) {
+      .navigation {
+        display: none;
       }
     }
   }

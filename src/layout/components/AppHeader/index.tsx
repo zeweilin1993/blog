@@ -1,15 +1,16 @@
 import './styles/index.scss';
 import { Link } from 'react-router-dom';
+import { navsConfig } from '@/common';
 
 function AppHeader() {
   return (
     <div className='app-header'>
       <nav className='nav'>
         <ul className='navigation'>
-          {['home', 'posts', 'projects', 'about'].map((value, index) => {
+          {navsConfig.map((nav, index) => {
             return (
               <li key={index}>
-                <Link to={`/${value}`}>{value}</Link>
+                <Link to={nav.path}>{nav.label}</Link>
               </li>
             );
           })}

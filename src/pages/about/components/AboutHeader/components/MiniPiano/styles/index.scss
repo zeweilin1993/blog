@@ -1,7 +1,7 @@
 .mini-piano {
   width: 280px;
   height: 60px;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid var(--color-text);
 
   .piano-keys-wrapper {
     display: flex;
@@ -10,7 +10,7 @@
 
     .piano-key {
       height: 50px;
-      border-right: 1px solid #ffffff;
+      border-right: 1px solid var(--color-text);
       margin-right: 7px;
 
       &:hover {

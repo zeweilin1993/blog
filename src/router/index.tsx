@@ -23,6 +23,10 @@ const routes: RouteObject[] = [
         element: () => import('@/pages/projects'),
       },
       {
+        path: 'share',
+        element: () => import('@/pages/share'),
+      },
+      {
         path: 'about',
         element: () => import('@/pages/about'),
       },
