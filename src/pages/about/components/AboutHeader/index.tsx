@@ -1,12 +1,11 @@
 import './styles/index.scss';
-import { MiniPiano, MiniSocial } from './components';
+import { MiniPiano } from './components';
 
 function AboutHeader() {
   return (
     <div className='about-header'>
       <div className='header'>
         <MiniPiano />
-        <MiniSocial />
       </div>
     </div>
   );

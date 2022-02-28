@@ -1,5 +1,5 @@
 .about-main {
-  padding-bottom: 40px;
+  padding: 40px 0;
 
   p {
     margin-bottom: 1em;
@@ -46,7 +46,17 @@
       .right {
         margin-top: 20px;
         padding-top: 20px;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        position: relative;
+
+        &::before {
+          width: 100%;
+          height: 1px;
+          content: '';
+          background-color: var(--color-text);
+          opacity: 0.1;
+          position: absolute;
+          top: 0;
+        }
 
         .pd {
           padding-left: 0;

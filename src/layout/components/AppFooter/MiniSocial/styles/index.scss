@@ -7,7 +7,7 @@
 
     li {
       height: 45px;
-      padding: 0 5px;
+      padding: 0 10px;
 
       a {
         height: 100%;
@@ -27,7 +27,7 @@
   .bd_n4 {
     display: block;
     position: absolute;
-    background-color: #000000;
+    background-color: var(--color-text);
     z-index: 10;
   }
 
@@ -54,12 +54,12 @@
   .bd_n1,
   .bd_n3 {
     width: 0;
-    height: 2px;
+    height: 1px;
   }
 
   .bd_n2,
   .bd_n4 {
-    width: 2px;
+    width: 1px;
     height: 0;
   }
 

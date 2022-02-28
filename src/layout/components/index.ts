@@ -1,4 +1,5 @@
-import AppHeader from './AppHeader';
 import Social from './Social';
+import AppHeader from './AppHeader';
+import AppFooter from './AppFooter';
 
-export { AppHeader, Social };
+export { Social, AppHeader, AppFooter };

@@ -1,4 +1,5 @@
-import { Social, AppHeader } from './components';
+import './styles/index.scss';
+import { Social, AppHeader, AppFooter } from './components';
 import { Outlet } from 'react-router-dom';
 
 function Layout() {
@@ -6,7 +7,10 @@ function Layout() {
     <div className='layout'>
       <Social />
       <AppHeader />
-      <Outlet />
+      <div className='layout-main'>
+        <Outlet />
+      </div>
+      <AppFooter />
     </div>
   );
 }
