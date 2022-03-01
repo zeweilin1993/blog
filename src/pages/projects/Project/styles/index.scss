@@ -1,34 +1,40 @@
+@import "~@/styles/mixin.scss";
+
 .project {
   display: flex;
   margin-bottom: 50px;
+  @include bd-animation;
 
   .left {
-    width: 280px;
     margin-right: 40px;
 
-    img {
-      width: 280px;
+    a {
+      width: 150px;
+      height: 100px;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    @media (max-width: 767px) {
+      margin-right: 0;
+
+      a {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 
   .right {
     flex: 1;
 
-    span {
-      font-weight: bold;
-    }
-
     p {
       margin: 5px 0 10px;
       overflow: hidden;
-    }
-
-    a {
-      float: left;
-
-      &:hover {
-        color: var(--color-bg);
-      }
     }
   }
 

@@ -5,21 +5,19 @@ function Project({ project }: IProjectProps) {
   return (
     <div className='project'>
       <div className='left'>
-        <img src={project.logo} alt={project.name} />
+        <a href={project.url} rel='noreferrer' target='_blank'>
+          <img src={project.logo} alt={project.name} />
+          <span className='bd_n1'></span>
+          <span className='bd_n2'></span>
+          <span className='bd_n3'></span>
+          <span className='bd_n4'></span>
+        </a>
+
       </div>
       <div className='right'>
-        <span>Name:</span>
-        <p>{project.name}</p>
-        <span>Technology Stack:</span>
-        <p>{project.technologyStack}</p>
-        <span>Url:</span>
-        <p>
-          <a href={project.url} rel='noreferrer' target='_blank'>
-            {project.url}
-          </a>
-        </p>
-        <span>Description:</span>
-        <p>{project.desc}</p>
+        <p>Name: {project.name}</p>
+        <p>Skills: {project.skills}</p>
+        <p>Desc: {project.desc}</p>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 export interface IProject {
   name: string;
-  technologyStack: string;
+  skills: string;
   url: string;
   desc: string;
   logo: string;
