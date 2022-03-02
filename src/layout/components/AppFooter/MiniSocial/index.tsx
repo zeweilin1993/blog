@@ -1,5 +1,5 @@
 import './styles/index.scss';
-import { itemsConfig } from '@/common';
+import { itemsConfig } from '@/app-helper';
 
 function MiniSocial() {
   return (

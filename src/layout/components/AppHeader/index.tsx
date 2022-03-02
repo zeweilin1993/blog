@@ -1,6 +1,6 @@
 import './styles/index.scss';
 import { Link } from 'react-router-dom';
-import { navsConfig } from '@/common';
+import { navsConfig } from '@/app-helper';
 
 function AppHeader() {
   return (

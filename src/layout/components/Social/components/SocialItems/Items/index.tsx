@@ -1,5 +1,5 @@
 import './styles/index.scss';
-import { navsConfig, itemsConfig } from '@/common';
+import { navsConfig, itemsConfig } from '@/app-helper';
 
 function Items() {
   return (
