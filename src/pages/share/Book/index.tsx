@@ -1,5 +1,9 @@
 import './styles/index.scss';
-import { IBookProps } from './@types';
+import { IBook } from '../share-helper';
+
+interface IBookProps {
+  book: IBook;
+}
 
 function Book({ book }: IBookProps) {
   return (

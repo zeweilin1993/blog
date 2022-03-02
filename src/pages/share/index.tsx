@@ -1,7 +1,7 @@
 import './styles/index.scss';
 
-import { Books } from './common';
 import Book from './Book';
+import { Books } from './share-helper';
 
 function Share() {
   document.title = 'SHARE - 林泽伟的个人博客';

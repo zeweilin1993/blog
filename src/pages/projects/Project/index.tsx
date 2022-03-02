@@ -1,5 +1,9 @@
 import './styles/index.scss';
-import { IProjectProps } from './@types';
+import { IProject } from '../project-helper';
+
+interface IProjectProps {
+  project: IProject;
+}
 
 function Project({ project }: IProjectProps) {
   return (
@@ -8,12 +12,20 @@ function Project({ project }: IProjectProps) {
         <a href={project.url} rel='noreferrer' target='_blank'>
           <img src={project.logo} alt={project.name} />
         </a>
-
       </div>
       <div className='right'>
-        <div className='prj-info-item'>Name: <a href={project.url} rel='noreferrer' target='_blank'>{project.name}</a></div>
-        <div className='prj-info-item'>Skills: <p>{project.skills}</p></div>
-        <div className='prj-info-item'>Desc: <p>{project.desc}</p></div>
+        <div className='prj-info-item'>
+          Name:{' '}
+          <a href={project.url} rel='noreferrer' target='_blank'>
+            {project.name}
+          </a>
+        </div>
+        <div className='prj-info-item'>
+          Skills: <p>{project.skills}</p>
+        </div>
+        <div className='prj-info-item'>
+          Desc: <p>{project.desc}</p>
+        </div>
       </div>
     </div>
   );

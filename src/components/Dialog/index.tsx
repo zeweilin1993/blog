@@ -1,6 +1,12 @@
 import './styles/index.scss';
-import { IDialogProps } from './@types';
 import { useState, useEffect } from 'react';
+
+interface IDialogProps {
+  visible?: boolean;
+  // TODO: 定义 react 组件对象或 jsx 组件
+  DefaultElement?: any;
+  closeCallback?: () => void;
+}
 
 function Dialog({ visible, DefaultElement, closeCallback }: IDialogProps) {
   const [dialogVisible, setDialogVisible] = useState(visible);

@@ -1,4 +1,10 @@
-import { IProject } from '../Project/@types';
+export interface IProject {
+  name: string;
+  skills: string;
+  url: string;
+  desc: string;
+  logo: string;
+}
 
 export const ProjectList: IProject[] = [
   {
@@ -13,13 +19,13 @@ export const ProjectList: IProject[] = [
     skills: 'Vue + ElementUI + Webpack + Docker',
     url: 'https://www.basejy.com/',
     desc: '倍思智慧教学系统可以帮助教学管理的全流程、角色化、智慧型、大数据的特点助力学校提升管理效能，提高教学质量。',
-    logo: require('../img/www.basejy.com_.png'),
+    logo: require('@/pages/projects/img/www.basejy.com_.png'),
   },
   {
     name: '滴灌通生态平台',
     skills: 'Vue3 + Element-plus + Vite + Echarts + Keycloak + Vital',
     url: 'https://mcisaas.com/',
     desc: '滴灌通生态平台充分利用节点企业的数字化收入管控能力为投资赋能,共同开拓中国小微经济的投资蓝海。',
-    logo: require('../img/mcisaas.com_.png'),
+    logo: require('@/pages/projects/img/mcisaas.com_.png'),
   },
 ];
